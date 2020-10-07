@@ -3,26 +3,25 @@ error_reporting(E_ALL);
 //$1nelzya = 1; нельзя использовать цыфры на первом месте и спец символы в назв. переменной
 /*test=0;
 var_dump($test);
-
 $test_2 = 2;
 var_dump($test_2); */
 
 //$skillupVariablable = 'TextHohoho';
- //var_dump($skillupVariablable);
+//var_dump($skillupVariablable);
 
 $skillupVariablable = 'Barabarabere';
 // var_dump($skillupVariablable);
 $school = $skillupVariablable;
 $skillupVariablable = 777;
- //var_dump($school,$skillupVariablable);
+//var_dump($school,$skillupVariablable);
 
- $testParent = 123;
+$testParent = 123;
 $testChild = &$testParent;
 $testParent = 333;
- $testChild = 222;
+$testChild = 222;
 
 
-    // var_dump($testParent,$testChild);
+// var_dump($testParent,$testChild);
 $deadVar = 111;
 unset($deadVar);
 //var_dump($deadVar);
@@ -50,7 +49,6 @@ var_dump($qwerty); */
             'test' > [
                 2,
                     3,
-
             ]
 ];
 print_r('
@@ -64,9 +62,9 @@ echo PHP_EOL;  */
 
 //$text1 = 'test123 * 44 + $testChild';
 $text2 = "test123 \n 123 * 44 + {$testChild} +\$test88";
-    //var_dump($text2);
+//var_dump($text2);
 
-    $text3 = <<<SQL
+$text3 = <<<SQL
 SELECT COUNT(id) FROM data WHERE id LIKE'%{$testParent}%'
 SQL;
 
