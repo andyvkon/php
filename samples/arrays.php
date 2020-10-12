@@ -49,7 +49,7 @@ array_push($groups[1]['students'],[
         'age' => 35 ,
     ]
 ); // эта ф-я эррей пуш работает медленно , в 2 раза хуже предыдущей
-    var_dump($groups);
+    //var_dump($groups);
 
 //    $menu =
 //        [
@@ -62,3 +62,6 @@ array_push($groups[1]['students'],[
 //                'title' => 'Home',
 //            ]
 //        ],
+
+$string = 'Hello world';
+var_dump($string[0], $string[-1]);
