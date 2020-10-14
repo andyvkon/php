@@ -167,7 +167,7 @@ array_flip(array_flip($a4)); // меняет значения и ключи ме
 ///
 $Task =
     [
-        //0 => // по умолчанию ключ начин с 0 и подразумевается что он здесь есть итак
+       'All' =>//0 => // по умолчанию ключ начин с 0 и подразумевается что он здесь есть итак
         ['Task1' =>
             [
                 'TaskManager1' => [
@@ -190,7 +190,7 @@ $Task =
                 ],
             ],
         ],
-
+        'All1' =>
         ['Task2' =>
             [
                 'TaskManager3' => [
@@ -215,10 +215,20 @@ $Task =
 
         ],
     ];
+//uasort ($Task, static function (array $a, array $b){
+//    return $b['All'] <=> $a['All1'];
+//});
+// //как отсортировать все 4 между собой по task ID - хз ?
 
-
-uasort($Task[0]['Task1'],  static function (array $a, array $b){
+uasort( $Task['All']['Task1']  , static function (array $a, array $b){
     return $b['task ID'] <=> $a['task ID'];
 });
+
+uasort($Task['All1']['Task2']  , static function (array $a, array $b){
+    return $b['task ID'] <=> $a['task ID'];
+});
+//
+
+
 
 var_dump($Task);
