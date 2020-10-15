@@ -1,5 +1,5 @@
 <?php
-//echo 'Hello world' , PHP_EOL;
+
 
 $files = scandir(__DIR__);
 $elements = array_filter($files, static function (string $element){
