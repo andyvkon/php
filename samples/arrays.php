@@ -168,12 +168,10 @@ array_flip(array_flip($a4)); // меняет значения и ключи ме
 ///
 $Task =
     [
-        [
-       //0 => // по умолчанию ключ начин с 0 и подразумевается что он здесь есть итак
-
-
-                'TaskManager1' =>
-                    [
+       'All' =>//0 => // по умолчанию ключ начин с 0 и подразумевается что он здесь есть итак
+        ['Task1' =>
+            [
+                'TaskManager1' => [
                     'task ID' => 11,
                     'task title' => 'Domashka',
                     'task description' => 'massive creation',
@@ -182,8 +180,7 @@ $Task =
                     'task status' => 'Almost part ready',
                     'subtasks' => 'skill improving',
                 ],
-                'TaskManager2' =>
-                    [
+                'TaskManager2' => [
                     'task ID' => 22,
                     'task title' => 'Fixing Homework material ',
                     'task description' => 'website creation',
@@ -192,13 +189,12 @@ $Task =
                     'task status' => 'Done',
                     'subtasks' => 'coaching',
                 ],
-
-
-
-
-
-                'TaskManager3' =>
-                    [
+            ],
+        ],
+        'All1' =>//1 => // по умолчанию ключ начин с 0 и подразумевается что он здесь есть итак
+        ['Task2' =>
+            [
+                'TaskManager3' => [
                     'task ID' => 33,
                     'task title' => 'Homeless helping',
                     'task description' => 'Help people',
@@ -216,22 +212,22 @@ $Task =
                     'task status' => 'At Filming',
                     'subtasks' => 'save money due filming',
                 ],
-
+            ],
 
         ],
     ];
 //uasort ($Task, static function (array $a, array $b){
 //    return $b['All'] <=> $a['All1'];
 //});
+// //как отсортировать все 4 между собой по task ID - хз ?
 
-
-uasort( $Task[0]  , static function (array $a, array $b){
+uasort( $Task['All']['Task1']  , static function (array $a, array $b){
     return $b['task ID'] <=> $a['task ID'];
 });
-//
-//uasort($Task[1]  , static function (array $a, array $b){
-//    return $b['task ID'] <=> $a['task ID'];
-//});
+
+uasort($Task['All1']['Task2']  , static function (array $a, array $b){
+    return $b['task ID'] <=> $a['task ID'];
+});
 //
 
 
