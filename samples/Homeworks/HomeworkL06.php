@@ -290,7 +290,9 @@ $Task =
            
             </tr>";
 //
-//        //<td>{$ForeachTaskNew['task owner']}
+      //  <td>{$ForeachTaskNew['task owner']}
+
+            //   // Как сделать форич внутри форича - ???????????????????????????????????
 //            foreach ($ForeachTaskNew['task owner'] as $Foreach2) {
 //                echo "<tr>
 //            <td> {$Foreach2['age']}</td>
@@ -298,8 +300,13 @@ $Task =
 //            <td> {$Foreach2['profession']}</td>
 //            <td> {$Foreach2['secret']}</td>
 //            </tr>";
+//                foreach ($Foreach2['secret'] as $Foreach3) {
+//                    echo "<tr>
+//            <td> {$Foreach3['nomer']}</td>
+//            </tr>"; }
 //
 //            }
+//              //   // Как сделать форич внутри форича - ???????????????????????????????????
     }
     ?>
 </table>
