@@ -134,6 +134,9 @@ $a = [
 //    echo PHP_EOL;
 //}
 
+
+
+
 //// HOMEWORK
 ///
 $Task =
@@ -352,10 +355,14 @@ foreach ($Task as  $new) {
 
 PHP_EOL;PHP_EOL;
 
-for($m = 0; $m < count($Task); $m++){
+//$NewFor = array_filter($Task, static function (string $element){
+//    return $element [0] === 't';
+//} );
 
-        if ($m % 2 !== 0){
-    echo $Task[0]['task status'] && $Task[0]['task owner'] ;
-          }}
+        for ($Newfor = 0; $Task > 0 && $Newfor < 5 ; $Newfor++ ) {
 
-echo $m;
+            var_dump("{$Task[0]['task status']}\n");
+        }
+
+
+
