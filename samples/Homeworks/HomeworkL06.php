@@ -242,21 +242,211 @@ $Task =
         <th style="text-align: center">task status</th>
         <th style="text-align: center">subtasks</th>
     </tr>
+    <?php
+    for ($k = 0; $k < (array_key_last($Task)-2 ); $k++) {
+        echo "<tr>
+        <td>{$Task[$k]['task ID']}</td>
+        <td>{$Task[$k]['task title']}</td>
+        <td>{$Task[$k]['task owner']}</td>
+        <td>{$Task[$k]['task description']}</td>
+        <td>{$Task[$k]['task deadline']}</td>
+        <td>{$Task[$k]['task status']}</td>
+        <td>{$Task[$k]['subtasks']}</td>
+    </tr>";
+    } ?>
+    <tr style="text-align: center">
+        <th></th>
+        <th></th>
+        <th>Id [1]--></th>
+
+
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th style="text-align: center">age</th>
+        <th style="text-align: center">name</th>
+        <th style="text-align: center">profession</th>
+        <th style="text-align: center">secret</th>
+    </tr>
+
 
     <?php
-    for ($k = 0; $k < (array_key_last($Task)+1 ); $k++) {
-        echo "<tr>
-            <td>{$Task[$k]['task ID']}</td>
-            <td>{$Task[$k]['task title']}</td>
-            <td>{$Task[$k]['task owner']}</td>
-            <td>{$Task[$k]['task description']}</td>
-            <td>{$Task[$k]['task deadline']}</td>
-            <td>{$Task[$k]['task status']}</td>
-            <td>{$Task[$k]['subtasks']}</td>
+
+    for ($m = 0; $m < (array_key_last($Task[0]['task owner'])+1 ); $m++) {
+        echo "
+              
+              <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{$Task[0]['task owner'][$m]['age']}</td>
+            <td>{$Task[0]['task owner'][$m]['name']}</td>
+            <td>{$Task[0]['task owner'][$m]['profession']}</td>
+            <td>{$Task[0]['task owner'][$m]['secret']}</td>
+            
             </tr>";
     }
     ?>
+
+    <tr>
+        <td style="height: 15px!important; opacity: 0.1%;"></td>
+    </tr>
+    <?php
+    for ($k = 0; $k < (array_key_last($Task)-1 ); $k++) {
+        if ($k === 1){
+        echo "<tr>
+        <td>{$Task[$k]['task ID']}</td>
+        <td>{$Task[$k]['task title']}</td>
+        <td>{$Task[$k]['task owner']}</td>
+        <td>{$Task[$k]['task description']}</td>
+        <td>{$Task[$k]['task deadline']}</td>
+        <td>{$Task[$k]['task status']}</td>
+        <td>{$Task[$k]['subtasks']}</td>
+    </tr>"; }
+    } ?>
+
+    <tr style="text-align: center">
+        <th></th>
+        <th></th>
+        <th>Id [2]--></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th style="text-align: center">age</th>
+        <th style="text-align: center">name</th>
+        <th style="text-align: center">profession</th>
+        <th style="text-align: center">secret</th>
+    </tr>
+
+    <?php
+
+
+    for ($n = 0; $n < (array_key_last($Task[1]['task owner']) + 1); $n++) {
+        echo "<tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{$Task[1]['task owner'][$n]['age']}</td>
+            <td>{$Task[1]['task owner'][$n]['name']}</td>
+            <td>{$Task[1]['task owner'][$n]['profession']}</td>
+            <td>{$Task[1]['task owner'][$n]['secret']}</td>
+            
+            </tr>";
+    }
+
+    ?>
+
+    <tr>
+        <td style="height: 15px!important; opacity: 0.1%;"></td>
+    </tr>
+
+    <?php
+    for ($k = 0; $k < (array_key_last($Task) ); $k++) {
+        if ($k === 2){
+            echo "<tr>
+        <td>{$Task[$k]['task ID']}</td>
+        <td>{$Task[$k]['task title']}</td>
+        <td>{$Task[$k]['task owner']}</td>
+        <td>{$Task[$k]['task description']}</td>
+        <td>{$Task[$k]['task deadline']}</td>
+        <td>{$Task[$k]['task status']}</td>
+        <td>{$Task[$k]['subtasks']}</td>
+    </tr>"; }
+    } ?>
+
+    <tr style="text-align: center">
+        <th></th>
+        <th></th>
+        <th>Id [3]--></th>
+
+
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th style="text-align: center">age</th>
+        <th style="text-align: center">name</th>
+        <th style="text-align: center">profession</th>
+        <th style="text-align: center">secret</th>
+    </tr>
+
+    <?php
+
+
+    for ($o = 0; $o < (array_key_last($Task[2]['task owner']) + 1); $o++) {
+        echo "<tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{$Task[2]['task owner'][$o]['age']}</td>
+            <td>{$Task[2]['task owner'][$o]['name']}</td>
+            <td>{$Task[2]['task owner'][$o]['profession']}</td>
+            <td>{$Task[2]['task owner'][$o]['secret']}</td>
+            
+            </tr>";
+    }
+
+    ?>
+
+    <tr>
+        <td style="height: 15px!important; opacity: 0.1%;"></td>
+    </tr>
+
+
+    <?php
+    for ($k = 0; $k < (array_key_last($Task)+1 ); $k++) {
+        if ($k === 3){
+            echo "<tr>
+        <td>{$Task[$k]['task ID']}</td>
+        <td>{$Task[$k]['task title']}</td>
+        <td>{$Task[$k]['task owner']}</td>
+        <td>{$Task[$k]['task description']}</td>
+        <td>{$Task[$k]['task deadline']}</td>
+        <td>{$Task[$k]['task status']}</td>
+        <td>{$Task[$k]['subtasks']}</td>
+    </tr>"; }
+    } ?>
+
+
+    <tr>
+        <th></th>
+        <th></th>
+        <th>Id [4] --></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th style="text-align: center">age</th>
+        <th style="text-align: center">name</th>
+        <th style="text-align: center">profession</th>
+        <th style="text-align: center">secret</th>
+    </tr>
+
+
+    <?php
+    for ($u = 0; $u < (array_key_last($Task[3]['task owner']) + 1); $u++) {
+    echo "<tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{$Task[3]['task owner'][$u]['age']}</td>
+        <td>{$Task[3]['task owner'][$u]['name']}</td>
+        <td>{$Task[3]['task owner'][$u]['profession']}</td>
+        <td>{$Task[3]['task owner'][$u]['secret']}</td>
+
+    </tr>";
+    }
+    ?>
+
 </table>
+
+
 <br><br>
 <table style="width: 80%;  margin-left: 40px; margin-top: 10px; font-size: 1em;" border="1px">
     <caption style="margin-bottom: 10px;">Operator ForEach</caption>
@@ -274,7 +464,7 @@ $Task =
     </tr>
 
 
-
+                    // FOREACH /////
     <?php
 
 
@@ -291,7 +481,6 @@ $Task =
             </tr>";
 //
       //  <td>{$ForeachTaskNew['task owner']}
-
             //   // Как сделать форич внутри форича - ???????????????????????????????????
 //            foreach ($ForeachTaskNew['task owner'] as $Foreach2) {
 //                echo "<tr>
