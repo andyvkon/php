@@ -101,6 +101,7 @@ $globalFunction2 = static function () use ($global1) : int {
 //$globalFunction2();
 //var_dump('outside 2 >>> ' . $global1);
 
+
 function linkedFunc(&$link) : void
 {
     var_dump('inside >>> ' . $link);
