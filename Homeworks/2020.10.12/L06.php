@@ -448,7 +448,7 @@ $Task =
 
 
 <br><br>
-<table style="width: 80%;  margin-left: 40px; margin-top: 10px; font-size: 1em;" border="1px">
+<table style="width: 80%;  margin-left: 40px; margin-top: 10px; font-size: 1em; margin-bottom: 50px;" border="1px">
     <caption style="margin-bottom: 10px;">Operator ForEach</caption>
     <tr style="text-align: center">
         <th style="text-align: center">task ID</th>
@@ -464,9 +464,9 @@ $Task =
     </tr>
 
 
-                    // FOREACH /////
-    <?php
 
+    <?php
+                        // FOREACH /////
 
         foreach ($Task as $ForeachTaskNew){
             echo "<tr>
