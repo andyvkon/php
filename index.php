@@ -1,39 +1,3 @@
-<?php
-
-
-$files = scandir(__DIR__);
-$elements = array_filter($files, static function (string $element){ // отфильтровать массив и вернуть (return) в массив
-    // элементы которые:
-    // 1) не содержкут точку как первый символ
-    // 2) строки которые начинаются с 'docker' ===  (false)   Ложь (т.е. не начинаются с "докер")
-
-    return $element[0] !== '.' && stripos ($element, 'docker' ) === false && // stripos - ищем позицию в $element(а именно ищем подстроку докер , (в строке $element)
-     stripos ($element, 'css' ) === false && stripos ($element, 'js' ) === false ;
-} );
-
-//var_dump($elements);
-    $html ='';
-    foreach ($elements as $element){
-        $rout = __DIR__. '/' . $element;
-
-        if (is_dir($rout)) {
-                $dir = scandir($rout);
-                     $Nestedelements = array_filter($dir, static function (string $element){
-                         return $element[0] !== '.';
-                     } );
-
-                        foreach ($Nestedelements as $nestedelement){
-                            echo "<li><a href='/{$element}/{$nestedelement}'> {$element}/{$nestedelement}</a></li>";
-                        }
-
-        }else {
-           $html .= "<li><a href='/{$element}'> {$element}</a></li>";
-        }
-    }
-?>
-
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -45,7 +9,7 @@ $elements = array_filter($files, static function (string $element){ // отфи�
     <link rel="stylesheet" href="css/bootstrap.css" >
     <title>Hello, world!</title>
 </head>
-<body>
+<body >
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -56,6 +20,42 @@ $elements = array_filter($files, static function (string $element){ // отфи�
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 -->
+<div class="ml-4 pl-4 mt-2 pt-2">
+<?php
+
+
+$files = scandir(__DIR__);
+$elements = array_filter($files, static function (string $element){ // отфильтровать массив и вернуть (return) в массив
+    // элементы которые:
+    // 1) не содержкут точку как первый символ
+    // 2) строки которые начинаются с 'docker' ===  (false)   Ложь (т.е. не начинаются с "докер")
+
+    return $element[0] !== '.' && stripos ($element, 'docker' ) === false && // stripos - ищем позицию в $element(а именно ищем подстроку докер , (в строке $element)
+        stripos ($element, 'css' ) === false && stripos ($element, 'js' ) === false
+        && stripos ($element, 'img' ) === false ;
+} );
+
+//var_dump($elements);
+$html ='';
+foreach ($elements as $element){
+    $rout = __DIR__. '/' . $element;
+
+    if (is_dir($rout)) {
+        $dir = scandir($rout);
+        $Nestedelements = array_filter($dir, static function (string $element){
+            return $element[0] !== '.';
+        } );
+
+        foreach ($Nestedelements as $nestedelement){
+            echo "<li><a href='/{$element}/{$nestedelement}'> {$element}/{$nestedelement}</a></li>";
+        }
+
+    }else {
+        $html .= "<li><a href='/{$element}'> {$element}</a></li>";
+    }
+}
+?>
+</div>
 
 <ul>
     <?= $html ?>
@@ -63,3 +63,15 @@ $elements = array_filter($files, static function (string $element){ // отфи�
 
 </body>
 </html>
+
+<style>
+    a:link {
+        color: #629CCC; /* Цвет ссылок */
+        padding: 2px; /* Поля вокруг текста */
+    }
+    a:hover {
+
+        color: #ffe; /* Цвет ссылки */
+    }
+    body {background: url(img/2.jpg);}
+</style>
