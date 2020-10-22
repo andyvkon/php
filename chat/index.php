@@ -1,19 +1,28 @@
+<?php
+$messages =[];
+$file = fopen (__DIR__ . 'storage5','rb');
+while ($line = fgets($file, 1024)) {  // fgets - чтение файла построчно
+    $messages[] = json_decode(trim($line), true, 512, JSON_THROW_ON_ERROR); // trim - обрезает переносы строк и проблемы - в начала и конце строки
+}
+fclose($file);
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>L:07</title>
+    <title>Doc</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css" >
-    <title>Hello, world!</title>
 </head>
 
-<body>
+<body class="text-white">
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -25,17 +34,70 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 -->
 
-
-<form action="/samples/send-message.php" method="post">
+    <h5 class="col-3 text-center" >Enter your data below:</h5>
+<form action="/chat/send-message.php" method="post" class="col-6" >
     <div>
-        <label for="nickname">Nickname</label>
-        <input type="text" name="nickname" id="nickname">
+        <label for="nickname" class="pb-2 pt-3 pl-3" >Nickname</label>
+        <input type="text" name="nickname" id="nickname" >
     </div>
     <div>
-        <label for="message" class="bg-primary">Message</label>
-        <input type="message" name="message" id="message">
+        <label for="nickname" class="pb-2 pt-2 pl-3">Password</label>
+        <input type="password" name="password" id="password" class="ml-1">
     </div>
-    <button type="submit">Send Message</button>
+    <div>
+        <label for="nickname" class="pb-2 pt-2 pl-3">E-mail</label>
+        <input type="email" name="email" id="email" class="ml-4" >
+    </div>
+    <div>
+        <label for="message" class="pb-2 pt-2 pl-3">Message</label>
+        <textarea name="message" id="message" rows="3" cols="23 " class="ml-1" ></textarea>
+    </div>
+    <button type="submit" class="ml-5 mb-2 pb-1 pt-1 col-3 " style="margin-left: 120px!important;" >Send Message</button>
 </form>
+
+
+    <table style="border: #491217; width: 96%;" class="ml-2 mr-2"    border="1px;">
+        <tr>
+            <th>Nickname</th>
+            <th>password</th>
+            <th>E-mail</th>
+            <th>Message</th>
+            <th>Time</th>
+
+        </tr>
+
+
+    <?php foreach ($messages as $message1) : ?>
+        <tr>
+            <td><?= $message1['nickname'] ?></td>
+            <td><?= $message1['password'] ?></td>
+            <td><?= $message1['email'] ?></td>
+            <td><?= $message1['message'] ?></td>
+            <td><?= $message1['time'] ?></td>
+        </tr>
+
+    <?php endforeach; ?>
+    </table>
 </body>
 </html>
+
+<style>
+    a:link {
+        color: #629CCC; /* Цвет ссылок */
+        padding: 2px; /* Поля вокруг текста */
+    }
+    a:hover {
+
+        color: #ffe; /* Цвет ссылки */
+    }
+    body {background: url(../img/2.jpg);}
+</style>
+
+<!--
+Add bad words filter
+Add more fields to form (write, save and print)
+EXTENDED
+Add bootstrap https://getbootstrap.com/
+Add reply button and threads
+Add delete message button
+-->
