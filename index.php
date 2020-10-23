@@ -32,7 +32,7 @@ $elements = array_filter($files, static function (string $element){ // отфи�
 
     return $element[0] !== '.' && stripos ($element, 'docker' ) === false && // stripos - ищем позицию в $element(а именно ищем подстроку докер , (в строке $element)
         stripos ($element, 'css' ) === false && stripos ($element, 'js' ) === false
-        && stripos ($element, 'img' ) === false ;
+        && stripos ($element, 'img' ) === false && stripos ($element, 'Homework' ) === false ;
 } );
 
 //var_dump($elements);
