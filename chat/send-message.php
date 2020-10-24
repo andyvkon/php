@@ -42,7 +42,7 @@ if (!preg_match('/^[a-zA-Z0-9]+$/', $password) || !$password ) {
 
 
        //FILTER foreach START
-    $bad = array('bird', 'cow', 'milk', 'world');
+    $bad = array('fuck', 'ass', 'asshole', 'shit' , 'motherfucker');
     foreach ($bad as $w)
         if ($message === $w) {
         echo 'Error: Message contain uncensored words';
