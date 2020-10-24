@@ -39,6 +39,7 @@ fclose($file);
     <div>
         <label for="nickname" class="pb-2 pt-3 pl-3" >Nickname</label>
         <input type="text" name="nickname1" id="nickname0" >
+
     </div>
     <div>
         <label  class="pb-2 pt-2 pl-3">Password</label>
