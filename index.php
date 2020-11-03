@@ -24,12 +24,12 @@
 <?php
 
 
-$files = scandir(__DIR__);
-$elements = array_filter($files, static function (string $element){ // отфильтровать массив и вернуть (return) в массив
+    // отфильтровать массив и вернуть (return) в массив
     // элементы которые:
     // 1) не содержкут точку как первый символ
     // 2) строки которые начинаются с 'docker' ===  (false)   Ложь (т.е. не начинаются с "докер")
-
+    $files = scandir(__DIR__);
+    $elements = array_filter($files, static function (string $element){
     return $element[0] !== '.' && stripos ($element, 'docker' ) === false && // stripos - ищем позицию в $element(а именно ищем подстроку докер , (в строке $element)
         stripos ($element, 'css' ) === false && stripos ($element, 'js' ) === false
         && stripos ($element, 'img' ) === false && stripos ($element, 'Homework' ) === false ;
