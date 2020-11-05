@@ -9,7 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="content/css/bootstrap.css" >
-    <title>Hello, world!</title>
+    <title>Home page</title>
 
 
 </head>

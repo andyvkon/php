@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="Index file modify" />
+    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="Index file modify">
+      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.19/img/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Homeworks/2020.10.19" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -63,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Homeworks/2020.10.19" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/Homeworks/2020.10.21" />
       <recent name="$PROJECT_DIR$/chat1" />
-      <recent name="$PROJECT_DIR$/chat" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -108,14 +112,7 @@
       <workItem from="1604234410431" duration="5046000" />
       <workItem from="1604251805937" duration="6082000" />
       <workItem from="1604414595644" duration="3539000" />
-      <workItem from="1604506673542" duration="25948000" />
-    </task>
-    <task id="LOCAL-00005" summary="L04: Added nginx config">
-      <created>1602156975314</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1602156975314</updated>
+      <workItem from="1604506673542" duration="26837000" />
     </task>
     <task id="LOCAL-00006" summary="L04: Added nginx config">
       <created>1602248400876</created>
@@ -453,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604582200083</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Index file modify">
+      <created>1604582216788</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1604582216788</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

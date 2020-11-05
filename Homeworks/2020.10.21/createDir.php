@@ -24,5 +24,5 @@ if (!mkdir($rout) && !is_dir($rout)) {
     exit(sprintf('Directory "%s" was not created', $rout));
 }
 
-header("Location: index.php?rout={$baseInsideDir}");
+header("Location: index_old.php?rout={$baseInsideDir}");
 exit;
