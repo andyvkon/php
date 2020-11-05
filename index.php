@@ -38,7 +38,7 @@
 //var_dump($elements);
 $html ='';
 foreach ($elements as $element){
-    $rout = __DIR__. '/' . $element;
+    $rout = __DIR__ . 'index.php/' . $element;
 
     if (is_dir($rout)) {
         $dir = scandir($rout);
@@ -54,6 +54,17 @@ foreach ($elements as $element){
         $html .= "<li><a href='/{$element}'> {$element}</a></li>";
     }
 }
+
+
+    function scan($folder, $space) {
+    $openFolder = opendir($folder);
+    while ( ($CurrentDirrectoryName = readdir($openFolder)) !== false ) {
+        if ($CurrentDirrectoryName == '.' or '..' ) continue;
+        if (is_dir($folder . '/' . $CurrentDirrectoryName)){
+            echo "{$space}[{$folder}]";
+        }
+    }
+    }
 ?>
 </div>
 

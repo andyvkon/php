@@ -35,7 +35,7 @@ fclose($file);
 -->
 
     <h5 class="col-3 text-center" >Enter your data below:</h5>
-<form action="/chat/send-message.php" method="post" class="col-6" >
+<form action="/content/chatent/chat/send-message.php" method="post" class="col-6" >
     <div>
         <label for="nickname" class="pb-2 pt-3 pl-3" >Nickname</label>
         <input type="text" name="nickname1" id="nickname0" >

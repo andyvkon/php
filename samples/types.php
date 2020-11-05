@@ -7,7 +7,7 @@ $bool = true;
 $array = [1, 2 ,3 ];
 $object = new stdClass();
 $null = null;
-$resource = fopen(__DIR__. '/basics.php', 'rb'); // fclose($resource); - закрывается так
+$resource = fopen(__DIR__ . '/basics.php', 'rb'); // fclose($resource); - закрывается так
 
 $callable = static function () { // передаёт функцию что бы где-то выполнить её
     return 1;
