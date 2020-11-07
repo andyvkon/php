@@ -7,19 +7,28 @@ $baseInsideDir = $_POST['baseDir'] ?? null;
 $name = $_POST['name'] ?? null;
 
 
-if (!$name) {
-    exit('Dir and name are required');
-}
-
 
 $rout = sprintf(
     '%s/%s/%s', rtrim($config['baseDir'], '/'),  rtrim($baseInsideDir, '/'),  trim($name)
 );
 
-if (!mkdir($rout) && !is_dir($rout)) {
-    exit(sprintf('Directory "%s" was not created', $rout));
+function removeDir($rout) {
+    $files = array_diff(scandir($rout),['..','.']);
+
+        foreach ($files as $file) {
+            $path = $rout . '/' . $file;
+
+            if (is_dir($path)) {
+                removeDir($path);
+                exit;
+            }   else {
+                    unlink($path);
+            }
+        }
+    rmdir($rout);
 }
 
+removeDir($rout);
+
 header("Location: index.php?rout={$baseInsideDir}");
-//header("Location: index.php?rout={$baseInsideDir}");
 exit;

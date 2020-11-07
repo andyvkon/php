@@ -2,10 +2,13 @@
 error_reporting(E_ALL);
 $config = require __DIR__ . '/config.php';
 
-$baseDir = rtrim($config['baseDir'], '/');
 $baseInsideDir = $_POST['baseDir'] ?? null;
 $name = $_POST['name'] ?? null;
-
+$baseDir = rtrim($config['baseDir'], '/');
+$webRout = rtrim($config['webRout'], '/');
+$actualRout = $baseDir;
+$actualDir = $actualRout;
+$actualInsideRout = ltrim(str_replace($baseDir, '', $actualRout), '/');
 
 if (!$name) {
     exit('Dir and name are required');
@@ -13,7 +16,10 @@ if (!$name) {
 
 
 $rout = sprintf(
-    '%s/%s/%s', rtrim($config['baseDir'], '/'),  rtrim($baseInsideDir, '/'),  trim($name)
+    '%s/%s/%s',
+    rtrim($config['baseDir'], '/'),
+    rtrim($baseInsideDir, '/'),
+    trim($name)
 );
 
 if (!mkdir($rout) && !is_dir($rout)) {
