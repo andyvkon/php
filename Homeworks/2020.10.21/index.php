@@ -70,8 +70,8 @@ if (rtrim($actualDir, '/') === $baseDir) {
 <body>
 <table width="100%" border="1" cellpadding="10">
     <tr>
-        <td colspan="2">
-            <a href="index.php">HOME</a>/<a href="<?= $actualInsideRout ?>"><?= $actualInsideRout ?></a>
+        <td colspan="2" style="text-align: center!important;">
+            <a href="index.php" >HOME</a>/<a href="<?= $actualInsideRout ?>"><?= $actualInsideRout ?></a>
         </td>
     </tr>
     <tr>
@@ -83,7 +83,7 @@ if (rtrim($actualDir, '/') === $baseDir) {
             </form>
             <form action="deleteDir.php" method="post">
                 <input name="baseDir" value="<?= $actualInsideRout ?>" type="hidden">
-                <button type="submit">Delete Dir</button>
+                <button type="submit" style="margin-top: 10px;  width:60%;">Delete Dir</button>
             </form>
 
             <ul>

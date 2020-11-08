@@ -15,20 +15,19 @@ $rout = sprintf(
 function removeDir($rout) {
     $files = array_diff(scandir($rout),['..','.']);
 
-        foreach ($files as $file) {
-            $path = $rout . '/' . $file;
+    foreach ($files as $file) {
+        $path = $rout . '/' . $file;
 
-            if (is_dir($path)) {
-                removeDir($path);
-                exit;
-            }   else {
-                    unlink($path);
-            }
+        if (is_dir($path)) {
+            removeDir($path);
+        }   else {
+            unlink($path);
         }
+    }
     rmdir($rout);
 }
 
 removeDir($rout);
 
-header("Location: index.php?rout={$baseInsideDir}");
+header("Location: index.php");
 exit;

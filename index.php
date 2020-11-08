@@ -29,8 +29,8 @@
 -->
 <div class="ml-4 pl-4 mt-2 pt-2">
 <?php
-error_reporting(E_ALL);
 
+error_reporting(E_ALL);
 $ext =  [
     'css' => '<i class="fab fa-css3-alt"></i>',
     'php' => '<i class="fab fa-php"></i>',
@@ -56,7 +56,7 @@ function scan($dir, $tab) {
             or $name == (stripos ($name, 'js' )) or $name == (stripos ($name, 'css' ))
             or $name == (stripos ($name, '.git' ))
             or $name == (stripos ($name, 'chatstorage' )) or $name == (stripos ($name, 'content' ))
-            or $name == (stripos ($name, '.idea' ))) continue;
+            or $name == (stripos ($name, '.idea' ))  or $name == (stripos ($name, '.user.ini' )) ) continue;
 
         $path = $dir . '/' . $name;
         if (is_dir($path) ) {

@@ -1,9 +1,10 @@
 <?php
+
 error_reporting(E_ALL);
 
 $config = require __DIR__ . '/config.php';
-
 $baseDir = rtrim($config['baseDir'], '/');
+var_dump($baseDir);
 $webRout = rtrim($config['webRout'], '/');
 
 $actualRout = $baseDir;
@@ -71,7 +72,8 @@ if (rtrim($actualDir, '/') === $baseDir) {
 <table width="100%" border="1" cellpadding="10">
     <tr>
         <td colspan="2">
-            <a href="index.php">HOME</a>/<a href="<?= $actualInsideRout ?>"><?= $actualInsideRout ?></a>
+            HOME/<?= $actualInsideRout ?>
+
         </td>
     </tr>
     <tr>
@@ -81,10 +83,6 @@ if (rtrim($actualDir, '/') === $baseDir) {
                 <input name="name" type="text">
                 <button type="submit">Create Dir</button>
             </form>
-            <form action="deleteDir.php" method="post">
-                <input name="baseDir" value="<?= $actualInsideRout ?>" type="hidden">
-                <button type="submit">Delete Dir</button>
-            </form>
 
             <ul>
                 <?php foreach ($dirData as $dirRout) : ?>
@@ -92,19 +90,10 @@ if (rtrim($actualDir, '/') === $baseDir) {
                 <?php endforeach; ?>
             </ul>
         </td>
-        <td align="top">
+        <td valign="top">
             <?= $content ?>
         </td>
     </tr>
-    <?php
-    //var_dump($webRout); // бесполезный
-  //  var_dump($rout); // бесполезный
-   // var_dump($actualRout); // /var/www/Homeworks/2020.10.21/storage
-    //var_dump($actualDir); // /var/www/Homeworks/2020.10.21/storage
-    //var_dump($actualInsideRout); // бесполезный
-   // var_dump($dirData); // весь массив , все папки в сторедж
-    //var_dump($dirRout); // самый нижний элемент
-    ?>
 </table>
 </body>
 </html>
