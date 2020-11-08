@@ -1,61 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="correction">
-      <change afterPath="$PROJECT_DIR$/.user.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.26/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/createDir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/downloadFile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/security.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/signOut.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/storage/c2RLAG7h_400x400.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/storage/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/uploadFiles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/FilesOldBackup/views/auth-form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/deleteDir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/0000/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/0000/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/0000/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/0000/88/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/0000/88/1/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/0000/88/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/0000/88/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/787/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/types.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/2020.10.21/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworks/2020.10.21/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/2020.10.21/deleteDir.php" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworks/2020.10.21/deleteDir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/2020.10.21/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworks/2020.10.21/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/createDir.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/deleteDir.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/last/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/last/createDir.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/last/deleteDir.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/last/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/superLast/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/superLast/createDir.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/superLast/deleteDir.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/backup-10-21/superLast/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/skillup.local.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/skillup.local.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/createDir.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/createDir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/downloadFile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/security.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/signOut.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/storage/c2RLAG7h_400x400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/storage/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/uploadFiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/uploadFiles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/views/auth-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="correction" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,14 +110,7 @@
       <workItem from="1604414595644" duration="3539000" />
       <workItem from="1604506673542" duration="30199000" />
       <workItem from="1604589319856" duration="13734000" />
-      <workItem from="1604748471962" duration="38713000" />
-    </task>
-    <task id="LOCAL-00008" summary="L04: Added nginx config">
-      <created>1602249448521</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1602249448521</updated>
+      <workItem from="1604748471962" duration="39264000" />
     </task>
     <task id="LOCAL-00009" summary="L04: Added data types examples">
       <created>1602419864040</created>
@@ -509,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604772859623</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Partial Homework L10">
+      <created>1604860748549</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1604860748549</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="L06: for / foreach /while / do while" />
     <MESSAGE value="L05: arrays , examples and homework done!" />
     <MESSAGE value="L06: added loop demonstration" />
     <MESSAGE value="L06: HOMEWORK" />
@@ -554,7 +499,8 @@
     <MESSAGE value="Index file modify" />
     <MESSAGE value="correction" />
     <MESSAGE value="Homework Delete and Create Folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homework Delete and Create Folders" />
+    <MESSAGE value="Partial Homework L10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Partial Homework L10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
