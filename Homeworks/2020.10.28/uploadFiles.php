@@ -1,25 +1,24 @@
 <?php
-
 error_reporting(E_ALL);
+require_once  __DIR__ . '/security.php';
 
-require_once __DIR__ . '/security.php';
 
 $attachment = isset($_FILES['attachment']) ? reArrayFiles($_FILES['attachment']) : null;
-$baseInsideDir = $_POST['baseDir'] ?? '';
-
 if (!$attachment) {
     exit('Uploading can not be completed');
 }
 
+$baseInsideDir = $_POST['baseDir'] ?? '';
+
 $config = require __DIR__ . '/config.php';
 
-$dir = sprintf(
+$dir = $rout = sprintf(
     '%s/%s',
-    rtrim($config['baseDir'], '/'),
-    rtrim($baseInsideDir, '/')
-);
+    rtrim($config['baseDir'],'/'),
+    rtrim($baseInsideDir, '/'),
+  );
 
-foreach ($attachment as $attach) {
+foreach ($attachment as $attach){
     $rout = sprintf(
         '%s/%s',
         $dir,
@@ -31,10 +30,7 @@ foreach ($attachment as $attach) {
 header("Location: index.php?rout={$baseInsideDir}");
 exit;
 
-/**
- * @param array $filePost
- * @return array
- */
+
 function reArrayFiles(array $filePost) : array
 {
     $fileArray = [];

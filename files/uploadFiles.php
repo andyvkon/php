@@ -1,14 +1,15 @@
 <?php
 error_reporting(E_ALL);
+require_once  __DIR__ . '/security.php';
+
+
 $attachment = isset($_FILES['attachment']) ? reArrayFiles($_FILES['attachment']) : null;
 if (!$attachment) {
     exit('Uploading can not be completed');
 }
+
 $baseInsideDir = $_POST['baseDir'] ?? '';
 
-
-
-//
 $config = require __DIR__ . '/config.php';
 
 $dir = $rout = sprintf(

@@ -34,6 +34,9 @@ error_reporting(E_ALL);
 $ext =  [
     'css' => '<i class="fab fa-css3-alt"></i>',
     'php' => '<i class="fab fa-php"></i>',
+    'pdf' => '<i class="far fa-file-pdf"></i>',
+    'zip' => '<i class="far fa-file-archive"></i>',
+    'rar' => '<i class="far fa-file-archive"></i>',
     'jpg' => '<i class="fas fa-file-image"></i>',
     'jpeg' => '<i class="fas fa-file-image"></i>',
     'png' => '<i class="fas fa-file-image"></i>',
@@ -64,9 +67,8 @@ function scan($dir, $tab) {
             scan ($path, $tab . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" );
         } else {
             $path_parts = pathinfo($path);
-            if (isset($path_parts['extension'], $ext) ) {
+            if (isset($path_parts['extension'], $ext) )
                 echo "{$tab}{$ext[$path_parts['extension']]} <a target='_blank' href='/{$path}'> {$name}</a><br>";
-            }
             else {
                 echo "{$tab}{$ext['other']}<a target='_blank' href='/{$path}'> {$name}</a><br>";
             }

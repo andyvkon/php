@@ -1,7 +1,7 @@
 <?php
 
-
 session_start();
+
 
 $login = $_POST['login'] ?? null;
 $password = $_POST['password'] ?? null;
@@ -13,12 +13,11 @@ if (!$login || !$password) {
 $config = require __DIR__ . '/config.php';
 
 $users = $config['users'];
-
 $passwordHash = $users[$login] ?? null;
-if (!$passwordHash || !password_verify($password, $passwordHash)) {
-    exit('Login or password is incorrect');
-}
 
+if (!$passwordHash || !password_verify($password, $passwordHash)){
+    exit('login or password is incorrect');
+}
 $_SESSION['user'] = $login;
 
-header('Location: index_old.php');
+header('Location: index.php');
