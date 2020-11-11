@@ -2,57 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="correction">
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/createDir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/deleteDir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/downloadFile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/security.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/signOut.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/0000/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/0000/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/0000/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/0000/88/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/0000/88/1/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/0000/88/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/0000/88/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/0000/bootstrap-4.5.3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/7.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/787/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/storage/types.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/uploadFiles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homeworks/2020.10.28/views/auth-form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/cookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/downloadFile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/extensions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/security.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/signOut.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/0000/bootstrap-4.5.3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/11.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/7.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/storage/Программа обучения fstk.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/views/auth-form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/cookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/output_buffering.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/templates/global.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/templates/inner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/createDir.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/downloadFile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/security.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/signOut.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/storage/c2RLAG7h_400x400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/storage/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/uploadFiles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/FilesOldBackup/views/auth-form.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/createDir.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/createDir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/deleteDir.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/deleteDir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/uploadFiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/uploadFiles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/cookies.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,11 +78,11 @@
       <recent name="$PROJECT_DIR$/chat1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/samples" />
+      <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$/TEST/Backup's" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/content/js" />
-      <recent name="$PROJECT_DIR$/content/TEST" />
-      <recent name="$PROJECT_DIR$/content" />
     </key>
   </component>
   <component name="RunManager">
@@ -162,14 +118,8 @@
       <workItem from="1604414595644" duration="3539000" />
       <workItem from="1604506673542" duration="30199000" />
       <workItem from="1604589319856" duration="13734000" />
-      <workItem from="1604748471962" duration="69677000" />
-    </task>
-    <task id="LOCAL-00010" summary="L04: Added branching examples">
-      <created>1602449075239</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1602449075239</updated>
+      <workItem from="1604748471962" duration="75290000" />
+      <workItem from="1605122420660" duration="709000" />
     </task>
     <task id="LOCAL-00011" summary="L04: HOMEWORK DONE!">
       <created>1602497830772</created>
@@ -507,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604860772194</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Global commit">
+      <created>1604946563821</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1604946563822</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,6 +484,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/content" />
+    </ignored-roots>
     <MESSAGE value="L06: added loop demonstration" />
     <MESSAGE value="L06: HOMEWORK" />
     <MESSAGE value="Тест ф-й" />
@@ -545,14 +505,14 @@
     <MESSAGE value="L08: HW Easy-level filter" />
     <MESSAGE value="L08: HW Simple-level filter" />
     <MESSAGE value="L07: HW Count EveryErrayElements" />
-    <MESSAGE value="Global commit" />
     <MESSAGE value="Dirrectory change + index file modify" />
     <MESSAGE value="Index file modify" />
     <MESSAGE value="correction" />
     <MESSAGE value="Homework Delete and Create Folders" />
     <MESSAGE value="Partial Homework L10" />
     <MESSAGE value="Partial Homework L10 , ini modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Partial Homework L10 , ini modification" />
+    <MESSAGE value="Global commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Global commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
