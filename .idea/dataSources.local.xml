@@ -15,5 +15,11 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="beget" uuid="0e2f6c0b-a901-49a7-949f-241859b5cc87">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>greysilver_1</user-name>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>

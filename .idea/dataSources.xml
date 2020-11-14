@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:13306/andy_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="beget" uuid="0e2f6c0b-a901-49a7-949f-241859b5cc87">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://sweet.beget.com:3306/greysilver_1</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

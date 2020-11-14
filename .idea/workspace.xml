@@ -4,8 +4,8 @@
     <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="correction">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd7bfafa-0cc0-4b6b-abaf-8c007d904341.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd7bfafa-0cc0-4b6b-abaf-8c007d904341.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,12 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Homeworks/2020.10.19" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -60,7 +65,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -117,14 +122,8 @@
       <workItem from="1604589319856" duration="13734000" />
       <workItem from="1604748471962" duration="75290000" />
       <workItem from="1605122420660" duration="4268000" />
-      <workItem from="1605181901203" duration="16834000" />
-    </task>
-    <task id="LOCAL-00012" summary="L04: Added arrays example">
-      <created>1602510202228</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1602510202228</updated>
+      <workItem from="1605181901203" duration="18257000" />
+      <workItem from="1605358247592" duration="17498000" />
     </task>
     <task id="LOCAL-00013" summary="L04: Added arrays example">
       <created>1602510218469</created>
@@ -462,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605123502165</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="L:12 1. Databases">
+      <created>1605212421698</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1605212421703</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +491,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/content" />
     </ignored-roots>
-    <MESSAGE value="L06: HOMEWORK" />
     <MESSAGE value="Тест ф-й" />
     <MESSAGE value="L07: Added global vars inside functions demonstration" />
     <MESSAGE value="L06: homework ,UPDATED OPERATOR FOR" />
@@ -510,7 +515,8 @@
     <MESSAGE value="Partial Homework L10 , ini modification" />
     <MESSAGE value="Global commit" />
     <MESSAGE value="L12: Added output buffering demonstration" />
-    <option name="LAST_COMMIT_MESSAGE" value="L12: Added output buffering demonstration" />
+    <MESSAGE value="L:12 1. Databases" />
+    <option name="LAST_COMMIT_MESSAGE" value="L:12 1. Databases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
