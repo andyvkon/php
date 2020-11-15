@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="correction">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd7bfafa-0cc0-4b6b-abaf-8c007d904341.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd7bfafa-0cc0-4b6b-abaf-8c007d904341.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,14 +124,8 @@
       <workItem from="1604748471962" duration="75290000" />
       <workItem from="1605122420660" duration="4268000" />
       <workItem from="1605181901203" duration="18257000" />
-      <workItem from="1605358247592" duration="17498000" />
-    </task>
-    <task id="LOCAL-00013" summary="L04: Added arrays example">
-      <created>1602510218469</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1602510218469</updated>
+      <workItem from="1605358247592" duration="22733000" />
+      <workItem from="1605452976055" duration="3272000" />
     </task>
     <task id="LOCAL-00014" summary="L04: Added arrays function example">
       <created>1602512890163</created>
@@ -468,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605212421703</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="L13: MySQL syntax , working with database">
+      <created>1605389617419</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1605389617420</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +493,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/content" />
     </ignored-roots>
-    <MESSAGE value="Тест ф-й" />
     <MESSAGE value="L07: Added global vars inside functions demonstration" />
     <MESSAGE value="L06: homework ,UPDATED OPERATOR FOR" />
     <MESSAGE value="L07: recursions examples" />
@@ -516,7 +517,8 @@
     <MESSAGE value="Global commit" />
     <MESSAGE value="L12: Added output buffering demonstration" />
     <MESSAGE value="L:12 1. Databases" />
-    <option name="LAST_COMMIT_MESSAGE" value="L:12 1. Databases" />
+    <MESSAGE value="L13: MySQL syntax , working with database" />
+    <option name="LAST_COMMIT_MESSAGE" value="L13: MySQL syntax , working with database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
