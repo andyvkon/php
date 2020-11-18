@@ -12,10 +12,10 @@ return [
     ],
 
     'db' => [
-        'host' => 'db',
-        'user' => 'andy_user',
-        'password' => 'andy_pwd',
-        'db' => 'andy_db',
+        'host' => 'greysilver.beget.tech',
+        'user' => 'greysilver_1',
+        'password' => 'l4Ur88XA',
+        'db' => 'greysilver_1',
         ],
  ];
 

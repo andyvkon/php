@@ -16,10 +16,29 @@
       </schema-mapping>
     </data-source>
     <data-source name="beget" uuid="0e2f6c0b-a901-49a7-949f-241859b5cc87">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <database-info product="MySQL" version="5.7.21-20-beget-5.7.21-20-1-log" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.13 (Revision: 66459e9d39c8fd09767992bc592acd2053279be6)" dbms="MYSQL" exact-version="5.7.21" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>greysilver_1</user-name>
       <schema-mapping />
+      <table-pattern>1</table-pattern>
+    </data-source>
+    <data-source name="hyperhost@drumandbass" uuid="5d0819ae-c25b-4489-9a2b-3579ad3fb1cb">
+      <database-info product="MySQL" version="5.6.49" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.13 (Revision: 66459e9d39c8fd09767992bc592acd2053279be6)" dbms="MYSQL" exact-version="5.6.49" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>h40676c_1</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>
