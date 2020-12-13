@@ -712,15 +712,25 @@
       <Charset>utf8mb4</Charset>
     </collation>
     <user id="223" parent="1" name="h40676c_1">
-      <Host>85.198.141.4</Host>
+      <Host>85.198.141.5</Host>
       <ObjectGrants>ALL PRIVILEGES|h40676c\_1
 </ObjectGrants>
     </user>
-    <table id="224" parent="2" name="categories"/>
-    <table id="225" parent="2" name="orders"/>
-    <table id="226" parent="2" name="product_to_order"/>
-    <table id="227" parent="2" name="products"/>
-    <table id="228" parent="2" name="users"/>
+    <table id="224" parent="2" name="categories">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="225" parent="2" name="orders">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="226" parent="2" name="product_to_order">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="227" parent="2" name="products">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="228" parent="2" name="users">
+      <Engine>InnoDB</Engine>
+    </table>
     <column id="229" parent="224" name="id">
       <Position>1</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
@@ -765,160 +775,202 @@
       <ColNames>title</ColNames>
       <UnderlyingIndexName>title</UnderlyingIndexName>
     </key>
-    <column id="238" parent="225" name="id">
+    <foreign-key id="238" parent="224" name="fk-categories-parent_category_id-categories-id">
+      <ColNames>parent_category_id</ColNames>
+      <RefTableName>categories</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="239" parent="225" name="id">
       <Position>1</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="239" parent="225" name="user_id">
+    <column id="240" parent="225" name="user_id">
       <Position>2</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="240" parent="225" name="created_at">
+    <column id="241" parent="225" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <index id="241" parent="225" name="fk-orders-user_id-users-id">
+    <column id="242" parent="225" name="upset_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+    </column>
+    <index id="243" parent="225" name="fk-orders-user_id-users-id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="242" parent="225" name="PRIMARY">
+    <key id="244" parent="225" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="243" parent="226" name="product_id">
+    <foreign-key id="245" parent="225" name="fk-orders-user_id-users-id">
+      <ColNames>user_id</ColNames>
+      <RefTableName>users</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="246" parent="226" name="product_id">
       <Position>1</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="244" parent="226" name="order_id">
+    <column id="247" parent="226" name="order_id">
       <Position>2</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="245" parent="226" name="quantity">
+    <column id="248" parent="226" name="quantity">
       <Position>3</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="246" parent="226" name="fk-product_to_order-product_id-products-id">
+    <index id="249" parent="226" name="fk-product_to_order-product_id-products-id">
       <ColNames>product_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="247" parent="226" name="fk-product_to_order-order_id-orders-id">
+    <index id="250" parent="226" name="fk-product_to_order-order_id-orders-id">
       <ColNames>order_id</ColNames>
       <Type>btree</Type>
     </index>
-    <column id="248" parent="227" name="id">
+    <foreign-key id="251" parent="226" name="fk-product_to_order-product_id-products-id">
+      <ColNames>product_id</ColNames>
+      <RefTableName>products</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="252" parent="226" name="fk-product_to_order-order_id-orders-id">
+      <ColNames>order_id</ColNames>
+      <RefTableName>orders</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="253" parent="227" name="id">
       <Position>1</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="249" parent="227" name="title">
+    <column id="254" parent="227" name="title">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="250" parent="227" name="price">
+    <column id="255" parent="227" name="price">
       <Position>3</Position>
       <DataType>decimal(8,2 digit) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="251" parent="227" name="category_id">
+    <column id="256" parent="227" name="category_id">
       <Position>4</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="252" parent="227" name="quantity">
+    <column id="257" parent="227" name="quantity">
       <Position>5</Position>
       <DataType>smallint(6)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <column id="253" parent="227" name="created_at">
+    <column id="258" parent="227" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <column id="254" parent="227" name="updated_at">
+    <column id="259" parent="227" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <index id="255" parent="227" name="title">
+    <index id="260" parent="227" name="title">
       <ColNames>title</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="256" parent="227" name="fk-products-category_id-categories-id">
+    <index id="261" parent="227" name="fk-products-category_id-categories-id">
       <ColNames>category_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="257" parent="227" name="PRIMARY">
+    <key id="262" parent="227" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="258" parent="227" name="title">
+    <key id="263" parent="227" name="title">
       <ColNames>title</ColNames>
       <UnderlyingIndexName>title</UnderlyingIndexName>
     </key>
-    <column id="259" parent="228" name="id">
+    <foreign-key id="264" parent="227" name="fk-products-category_id-categories-id">
+      <ColNames>category_id</ColNames>
+      <RefTableName>categories</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="265" parent="228" name="id">
       <Position>1</Position>
       <DataType>smallint(5) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="260" parent="228" name="name">
+    <column id="266" parent="228" name="name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="261" parent="228" name="login">
+    <column id="267" parent="228" name="login">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="262" parent="228" name="password">
+    <column id="268" parent="228" name="password">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="263" parent="228" name="role">
+    <column id="269" parent="228" name="role">
       <Position>5</Position>
       <DataType>enum(&apos;admin&apos;, &apos;user&apos;)|0e</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;user&apos;</DefaultExpression>
     </column>
-    <column id="264" parent="228" name="created_at">
+    <column id="270" parent="228" name="is_active">
       <Position>6</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1</DefaultExpression>
+    </column>
+    <column id="271" parent="228" name="created_at">
+      <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <column id="265" parent="228" name="updated_at">
-      <Position>7</Position>
+    <column id="272" parent="228" name="updated_at">
+      <Position>8</Position>
       <DataType>timestamp|0s</DataType>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <index id="266" parent="228" name="login">
+    <index id="273" parent="228" name="login">
       <ColNames>login</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="267" parent="228" name="PRIMARY">
+    <key id="274" parent="228" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="268" parent="228" name="login">
+    <key id="275" parent="228" name="login">
       <ColNames>login</ColNames>
       <UnderlyingIndexName>login</UnderlyingIndexName>
     </key>

@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="correction">
-      <change afterPath="$PROJECT_DIR$/shop/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/controllers/categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/lib/ dispatcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/lib/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/models/categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/sql/structure.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/views/categories/create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d0819ae-c25b-4489-9a2b-3579ad3fb1cb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d0819ae-c25b-4489-9a2b-3579ad3fb1cb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/skillup.local.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/skillup.local.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +77,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -81,11 +92,11 @@
       <recent name="$PROJECT_DIR$/chat1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop" />
       <recent name="$PROJECT_DIR$/samples" />
       <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$/TEST/Backup's" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/content/js" />
     </key>
   </component>
   <component name="RunManager">
@@ -125,14 +136,12 @@
       <workItem from="1605122420660" duration="4268000" />
       <workItem from="1605181901203" duration="18257000" />
       <workItem from="1605358247592" duration="22733000" />
-      <workItem from="1605452976055" duration="20607000" />
-    </task>
-    <task id="LOCAL-00015" summary="L05: Added arrays function example + Homework">
-      <created>1602518585717</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1602518585717</updated>
+      <workItem from="1605452976055" duration="24398000" />
+      <workItem from="1606059074479" duration="11404000" />
+      <workItem from="1606595663115" duration="1670000" />
+      <workItem from="1606599566262" duration="366000" />
+      <workItem from="1606646158798" duration="1578000" />
+      <workItem from="1607777934428" duration="28625000" />
     </task>
     <task id="LOCAL-00016" summary="L06: for / foreach /while / do while">
       <created>1602594607110</created>
@@ -470,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605456460300</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="L14: Added php mysqli connection + Database on hosting upload and connect.">
+      <created>1605732778724</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1605732778724</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +509,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/content" />
     </ignored-roots>
-    <MESSAGE value="L06: homework ,UPDATED OPERATOR FOR" />
     <MESSAGE value="L07: recursions examples" />
     <MESSAGE value="L07: functions and recursions examples" />
     <MESSAGE value="L07: Homework" />
@@ -518,7 +533,8 @@
     <MESSAGE value="L:12 1. Databases" />
     <MESSAGE value="L13: MySQL syntax , working with database" />
     <MESSAGE value="L14: Added php mysqli connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="L14: Added php mysqli connection" />
+    <MESSAGE value="L14: Added php mysqli connection + Database on hosting upload and connect." />
+    <option name="LAST_COMMIT_MESSAGE" value="L14: Added php mysqli connection + Database on hosting upload and connect." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

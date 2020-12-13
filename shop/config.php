@@ -8,9 +8,9 @@ return [
     ],
 
     'db' => [
-        'host' => 'cp5ua.hyperhost.ua',
-        'user' => 'h40676c_1',
-        'password' => 'Djkbdfx1995',
+        'host' => '195.54.163.133',
+        'user' => 'h40676c',
+        'password' => 'Воливач1995',
         'db' => 'h40676c_1',
     ],
 ];

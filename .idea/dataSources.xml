@@ -8,17 +8,6 @@
       <jdbc-url>jdbc:mysql://localhost:13306/andy_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="beget" uuid="0e2f6c0b-a901-49a7-949f-241859b5cc87">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://greysilver.beget.tech:3306/greysilver_1</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-      <driver-properties>
-        <property name="serverTimezone" value="UTC" />
-        <property name="selfDestructOnPingSecondsLifetime" value="2" />
-      </driver-properties>
-    </data-source>
     <data-source source="LOCAL" name="hyperhost@drumandbass" uuid="5d0819ae-c25b-4489-9a2b-3579ad3fb1cb">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
