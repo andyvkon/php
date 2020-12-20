@@ -15,7 +15,8 @@ function actionShow(int $id) {
 function actionCreate()
 {
     if ($_POST && createCategory($_POST)) {
-        header('Location: /shop/categories/show-all');
+//        header('Location: /shop/categories/show-all');
+        header('Location: /shop/categories/create');
         exit;
 
     }
@@ -25,5 +26,7 @@ function actionCreate()
 
 function actionDelete(int $id)
 {
+    $sql = 'DELETE FROM categories WHERE id > 5';
+    header('Location: /shop/categories/create');
 
 }

@@ -12,6 +12,8 @@ function createCategory(array $data) :bool
      return mysqli_stmt_execute($stmt);
 }
 
+
+
 /**
  * @return array
  */

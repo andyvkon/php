@@ -12,10 +12,16 @@ return [
     ],
 
     'db' => [
-        'host' => 'greysilver.beget.tech',
-        'user' => 'greysilver_1',
-        'password' => 'l4Ur88XA',
-        'db' => 'greysilver_1',
+//        'host' => 'greysilver.beget.tech',
+//        'user' => 'greysilver_1',
+//        'password' => 'l4Ur88XA',
+//        'db' => 'greysilver_1',
+        'host' => '195.54.163.133',
+        'user' => 'h40676c',
+        'password' => 'Воливач1995',
+        'db' => 'h40676c_1',
         ],
  ];
+
+
 

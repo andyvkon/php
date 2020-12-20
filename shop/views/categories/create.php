@@ -13,4 +13,11 @@
         </select>
     </div>
     <input type="submit" value="Save">
+
 </form>
+<form action="actionDelete.php" >
+
+    <button type="submit" value="Delete">Delete</button>
+</form>
+<?php
+

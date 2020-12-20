@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="correction">
-      <change afterPath="$PROJECT_DIR$/shop/controllers/categories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/lib/ dispatcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/lib/db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/models/categories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/sql/structure.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/views/categories/create.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5d0819ae-c25b-4489-9a2b-3579ad3fb1cb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5d0819ae-c25b-4489-9a2b-3579ad3fb1cb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="L15: Added shop MVC structure">
+      <change afterPath="$PROJECT_DIR$/oop/classes/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/views/categories/actionDelete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/skillup.local.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/skillup.local.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/controllers/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/controllers/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/lib/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/lib/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/models/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/views/categories/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views/categories/create.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,14 +134,11 @@
       <workItem from="1606595663115" duration="1670000" />
       <workItem from="1606599566262" duration="366000" />
       <workItem from="1606646158798" duration="1578000" />
-      <workItem from="1607777934428" duration="28625000" />
-    </task>
-    <task id="LOCAL-00016" summary="L06: for / foreach /while / do while">
-      <created>1602594607110</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1602594607110</updated>
+      <workItem from="1607777934428" duration="34725000" />
+      <workItem from="1608236081030" duration="1739000" />
+      <workItem from="1608318161645" duration="1294000" />
+      <workItem from="1608321498302" duration="223000" />
+      <workItem from="1608370252614" duration="20392000" />
     </task>
     <task id="LOCAL-00017" summary="L05: arrays , examples and homework done!">
       <created>1602624342774</created>
@@ -486,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605732778724</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="L15: Added shop MVC structure">
+      <created>1607883626765</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1607883626766</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +506,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/content" />
     </ignored-roots>
-    <MESSAGE value="L07: recursions examples" />
     <MESSAGE value="L07: functions and recursions examples" />
     <MESSAGE value="L07: Homework" />
     <MESSAGE value="L07: HW -&gt; Bootstrap /Jquery connect" />
@@ -534,7 +530,8 @@
     <MESSAGE value="L13: MySQL syntax , working with database" />
     <MESSAGE value="L14: Added php mysqli connection" />
     <MESSAGE value="L14: Added php mysqli connection + Database on hosting upload and connect." />
-    <option name="LAST_COMMIT_MESSAGE" value="L14: Added php mysqli connection + Database on hosting upload and connect." />
+    <MESSAGE value="L15: Added shop MVC structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="L15: Added shop MVC structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

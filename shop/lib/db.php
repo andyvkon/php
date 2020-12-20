@@ -1,5 +1,7 @@
 <?php
+
 $dbConnetction = null;
+
 /**
  * @param array $config
  */
@@ -30,7 +32,7 @@ function getDb() :mysqli
 {
     global $dbConnetction;
 
-    if ($dbConnetction ===null) {
+    if ($dbConnetction === null) {
        exit ('DB connection is lost');
     } return $dbConnetction;
 }
