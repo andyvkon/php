@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="L15: Added shop MVC structure">
-      <change afterPath="$PROJECT_DIR$/oop/classes/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/views/categories/actionDelete.php" afterDir="false" />
+    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="L16: OOP">
+      <change afterPath="$PROJECT_DIR$/oop/classes/123.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/classes/homework.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/controllers/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/controllers/categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/lib/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/lib/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/models/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models/categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/views/categories/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views/categories/create.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,21 +132,8 @@
       <workItem from="1608236081030" duration="1739000" />
       <workItem from="1608318161645" duration="1294000" />
       <workItem from="1608321498302" duration="223000" />
-      <workItem from="1608370252614" duration="20392000" />
-    </task>
-    <task id="LOCAL-00017" summary="L05: arrays , examples and homework done!">
-      <created>1602624342774</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1602624342774</updated>
-    </task>
-    <task id="LOCAL-00018" summary="L05: arrays , examples and homework done!">
-      <created>1602702650509</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1602702650509</updated>
+      <workItem from="1608370252614" duration="22117000" />
+      <workItem from="1608755691735" duration="7161000" />
     </task>
     <task id="LOCAL-00019" summary="L05: arrays , examples and homework done!">
       <created>1602756203365</created>
@@ -483,7 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607883626766</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="L14: Homework try, some problems with deleting from database.">
+      <created>1608474152305</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1608474152305</updated>
+    </task>
+    <task id="LOCAL-00067" summary="L16: OOP">
+      <created>1608474171249</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1608474171251</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,8 +501,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/content" />
     </ignored-roots>
-    <MESSAGE value="L07: functions and recursions examples" />
-    <MESSAGE value="L07: Homework" />
     <MESSAGE value="L07: HW -&gt; Bootstrap /Jquery connect" />
     <MESSAGE value="L05: -&gt; Homework array creation and Foreach inside Foreach inside Foreach" />
     <MESSAGE value="HW2 -&gt; Homework array creation and Foreach inside Foreach inside Foreach" />
@@ -531,7 +524,9 @@
     <MESSAGE value="L14: Added php mysqli connection" />
     <MESSAGE value="L14: Added php mysqli connection + Database on hosting upload and connect." />
     <MESSAGE value="L15: Added shop MVC structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="L15: Added shop MVC structure" />
+    <MESSAGE value="L14: Homework try, some problems with deleting from database." />
+    <MESSAGE value="L16: OOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="L16: OOP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
