@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="L16: OOP">
-      <change afterPath="$PROJECT_DIR$/oop/classes/123.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oop/classes/homework.php" afterDir="false" />
+    <list default="true" id="7ae46c46-b530-45b0-bf06-27dedc58e704" name="Default Changelist" comment="L16: OOP 1 Homework">
+      <change afterPath="$PROJECT_DIR$/oop/abstractions/Animal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/abstractions/Cat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/abstractions/Dog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/abstractions/Scratchable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/abstractions/Securable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/abstractions/Sofa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/abstractions/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/iteration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/magic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/oop1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop/static.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +72,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -133,14 +143,8 @@
       <workItem from="1608318161645" duration="1294000" />
       <workItem from="1608321498302" duration="223000" />
       <workItem from="1608370252614" duration="22117000" />
-      <workItem from="1608755691735" duration="7161000" />
-    </task>
-    <task id="LOCAL-00019" summary="L05: arrays , examples and homework done!">
-      <created>1602756203365</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1602756203365</updated>
+      <workItem from="1608755691735" duration="7464000" />
+      <workItem from="1609596829109" duration="12069000" />
     </task>
     <task id="LOCAL-00020" summary="L05: arrays , examples and homework done!">
       <created>1602773980544</created>
@@ -478,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608474171251</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="L16: OOP 1 Homework">
+      <created>1608763352384</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1608763352385</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,8 +512,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/content" />
     </ignored-roots>
-    <MESSAGE value="L07: HW -&gt; Bootstrap /Jquery connect" />
-    <MESSAGE value="L05: -&gt; Homework array creation and Foreach inside Foreach inside Foreach" />
     <MESSAGE value="HW2 -&gt; Homework array creation and Foreach inside Foreach inside Foreach" />
     <MESSAGE value="HW1 -&gt; operator IF / Ternary operator" />
     <MESSAGE value="HW4 -&gt; Functions: Creation analogs print_r and arrayCount" />
@@ -526,7 +535,9 @@
     <MESSAGE value="L15: Added shop MVC structure" />
     <MESSAGE value="L14: Homework try, some problems with deleting from database." />
     <MESSAGE value="L16: OOP" />
-    <option name="LAST_COMMIT_MESSAGE" value="L16: OOP" />
+    <MESSAGE value="L16: OOP 1 Homework" />
+    <MESSAGE value="OOP -&gt; Magic / abstractions / Classes / Interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="OOP -&gt; Magic / abstractions / Classes / Interfaces" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
